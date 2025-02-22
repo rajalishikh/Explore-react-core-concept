@@ -1,6 +1,7 @@
 import './App.css';
 // import Todo from './Todo';
 import Actor from './Actor';
+import Books from './Books';
 
 function App() {
  
@@ -12,6 +13,15 @@ function App() {
     {id:4,name:"HONEY SING",town:"Pakisthan"},
     {id:4,name:"HONEY SING",town:"Pakisthan"},
   ]
+  const Books_Information=[
+    {id:1,Book_name:"Bangla",price:400},
+    {id:2,Book_name:"English",price:1400},
+    {id:3,Book_name:"physics",price:2400},
+    {id:4,Book_name:"Chemestry",price:5400},
+    {id:5,Book_name:"English2nd",price:7400},
+  ]
+
+  
   
   return (
     <>
@@ -20,6 +30,7 @@ function App() {
     {
       singers.map((singer)=><Actor key={singer.id} name2={singer}></Actor>)
     }
+    <Books All_inFo_Book={Books_Information} ></Books>
 
       
       {/* <Todo 
