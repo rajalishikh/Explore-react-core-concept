@@ -1,12 +1,28 @@
 import './App.css';
-import Todo from './Todo';
+// import Todo from './Todo';
+import Actor from './Actor';
 
 function App() {
+ 
+  const singers=[
+    {id:1,name:"Atif_aslam",town:"Pakisthan"},
+    {id:2,name:"Rahad_fate_ali_kHAN",town:"Pakisthan"},
+    {id:3,name:"MOMOTA",town:"Pakisthan"},
+    {id:4,name:"HONEY SING",town:"Pakisthan"},
+    {id:4,name:"HONEY SING",town:"Pakisthan"},
+    {id:4,name:"HONEY SING",town:"Pakisthan"},
+  ]
   
   return (
     <>
+    
+    
+    {
+      singers.map((singer)=><Actor key={singer.id} name2={singer}></Actor>)
+    }
+
       
-      <Todo 
+      {/* <Todo 
       work="React is complete BAsic" 
       isDone={true}></Todo>
       <Todo 
@@ -14,7 +30,7 @@ function App() {
       isDone={false}></Todo>
       <Todo 
       work="react native complete"
-       isDone={true}></Todo>
+       isDone={true}></Todo> */}
       {/* <Person></Person>
       <Person></Person>
       <Person></Person>
